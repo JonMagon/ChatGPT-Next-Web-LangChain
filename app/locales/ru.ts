@@ -78,6 +78,36 @@ const ru: PartialLocaleType = {
     MessageFromYou: "Сообщение от вас",
     MessageFromChatGPT: "Сообщение от ChatGPT",
   },
+  Export: {
+    Title: "Экспорт сообщений",
+    Copy: "Копировать все",
+    Download: "Скачать",
+    MessageFromYou: "Сообщение от вас",
+    MessageFromChatGPT: "Сообщение от ChatGPT",
+    Share: "Поделиться в ShareGPT",
+    Format: {
+      Title: "Формат экспорта",
+      SubTitle: "Markdown или PNG",
+    },
+    IncludeContext: {
+      Title: "Включаемый контент",
+      SubTitle: "Экспортировать контекстные подсказки в маске или нет",
+    },
+    Steps: {
+      Select: "Подобрать",
+      Preview: "Просмотр",
+    },
+    Image: {
+      Toast: "Создание изображения...",
+      Modal: "Long press or right click to save image",
+    },
+  },
+  Select: {
+    Search: "Поиск",
+    All: "Выбрать все",
+    Latest: "Выбрать последние",
+    Clear: "Снять выделение",
+  },
   Memory: {
     Title: "Память",
     EmptyContent: "Пусто.",
@@ -96,7 +126,20 @@ const ru: PartialLocaleType = {
   Settings: {
     Title: "Настройки",
     SubTitle: "Все настройки",
-
+    Danger: {
+      Reset: {
+        Title: "Сбросить все настройки",
+        SubTitle: "Сброс к настройкам по умолчанию",
+        Action: "Сбросить",
+        Confirm: "Подтверждаете сброс всех настроек до значений по умолчанию?",
+      },
+      Clear: {
+        Title: "Удалить все данные",
+        SubTitle: "Удалить все сообщения и настройки",
+        Action: "Удалить",
+        Confirm: "Подтверждаете удаление всех сообщений и настроек?",
+      },
+    },
     Lang: {
       Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
       All: "Все языки",
@@ -123,13 +166,21 @@ const ru: PartialLocaleType = {
     Theme: "Тема",
     TightBorder: "Узкая граница",
     SendPreviewBubble: {
-      Title: "Отправить предпросмотр",
-      SubTitle: "Предварительный просмотр markdown в пузыре",
+      Title: "Предпросмотр сообщений",
+      SubTitle: "Предварительный просмотр набираемых сообщений с Markdown",
+    },
+    AutoGenerateTitle: {
+      Title: "Автоматическое создание заголовка",
+      SubTitle: "Создавать подходящий заголовок на основе содержания разговора",
     },
     Mask: {
       Splash: {
         Title: "Экран заставки маски",
         SubTitle: "Показывать экран заставки маски перед началом нового чата",
+      },
+      Builtin: {
+        Title: "Скрыть встроенные маски",
+        SubTitle: "Скрыть встроенные маски в списке масок",
       },
     },
     Prompt: {
@@ -170,6 +221,72 @@ const ru: PartialLocaleType = {
       Check: "Проверить",
       NoAccess: "Введите API ключ, чтобы проверить баланс",
     },
+    Access: {
+      AccessCode: {
+        Title: "Код доступа",
+        SubTitle: "Контроль доступа включен",
+        Placeholder: "Введите код",
+      },
+      CustomEndpoint: {
+        Title: "Custom Endpoint",
+        SubTitle: "Use custom Azure or OpenAI service",
+      },
+      Provider: {
+        Title: "Model Provider",
+        SubTitle: "Select Azure or OpenAI",
+      },
+      OpenAI: {
+        ApiKey: {
+          Title: "OpenAI API Key",
+          SubTitle: "User custom OpenAI Api Key",
+          Placeholder: "sk-xxx",
+        },
+
+        Endpoint: {
+          Title: "OpenAI Endpoint",
+          SubTitle: "Must starts with http(s):// or use /api/openai as default",
+        },
+      },
+      Azure: {
+        ApiKey: {
+          Title: "Azure Api Key",
+          SubTitle: "Check your api key from Azure console",
+          Placeholder: "Azure Api Key",
+        },
+
+        Endpoint: {
+          Title: "Azure Endpoint",
+          SubTitle: "Example: ",
+        },
+
+        ApiVerion: {
+          Title: "Azure Api Version",
+          SubTitle: "Check your api version from azure console",
+        },
+      },
+      CustomModel: {
+        Title: "Пользовательские модели",
+        SubTitle: "Пользовательские модели, разделенные запятой.",
+      },
+      Google: {
+        ApiKey: {
+          Title: "API Key",
+          SubTitle:
+            "Bypass password access restrictions using a custom Google AI Studio API Key",
+          Placeholder: "Google AI Studio API Key",
+        },
+
+        Endpoint: {
+          Title: "Endpoint Address",
+          SubTitle: "Example:",
+        },
+
+        ApiVerion: {
+          Title: "API Version (gemini-pro api version)",
+          SubTitle: "Select a specific part version",
+        },
+      },
+    },
 
     Model: "Модель",
     Temperature: {
@@ -189,6 +306,20 @@ const ru: PartialLocaleType = {
       Title: "Штраф за частоту",
       SubTitle:
         "Большее значение снижает вероятность повторения одной и той же строки",
+    },
+    Plugin: {
+      Enable: {
+        Title: "Включить плагины",
+        SubTitle: "Включить вызов плагинов",
+      },
+      MaxIteration: {
+        Title: "Максимум итераций",
+        SubTitle: "Максимум вызовов плагина",
+      },
+      ReturnIntermediateStep: {
+        Title: "Показывать промежуточные шаги",
+        SubTitle: "Показывать промежуточные шаги для вызова плагина",
+      },
     },
   },
   Store: {
@@ -214,9 +345,30 @@ const ru: PartialLocaleType = {
     Toast: (x: any) => `С ${x} контекстными подсказками`,
     Edit: "Контекстные и памятные подсказки",
     Add: "Добавить подсказку",
+    Clear: "Контекст очищен",
+    Revert: "Вернуть",
   },
   Plugin: {
     Name: "Плагин",
+    Page: {
+      Title: "Плагин",
+      SubTitle: (count: number) => `${count} плагинов`,
+      Search: "Поиск",
+      Create: "Создать",
+    },
+    Item: {
+      View: "Посмотреть",
+      Edit: "Редактировать",
+      Delete: "Удалить",
+      DeleteConfirm: "Подтверждаете удаление?",
+    },
+    EditModal: {
+      Title: (readonly: boolean) =>
+        `Edit Plugin Template ${readonly ? "(readonly)" : ""}`,
+      Download: "Скачать",
+      Clone: "Клонировать",
+    },
+    RuntimeWarning: "Доступно только при развертывании в среде, отличной от Vercel.",
   },
   FineTuned: {
     Sysmessage: "Вы - ассистент, который",
@@ -268,10 +420,25 @@ const ru: PartialLocaleType = {
     Create: "Создать",
     Edit: "Редактировать",
   },
+
+  UI: {
+    Confirm: "Подтвердить",
+    Cancel: "Отмена",
+    Close: "Закрыть",
+    Create: "Создать",
+    Edit: "Редактировать",
+    Export: "Экспорт",
+    Import: "Импорт",
+    Sync: "Синхронизировать",
+    Config: "Настройки",
+  },
   Exporter: {
+    Description: {
+      Title: "Будут отображаться сообщения только после очистки контекста",
+    },
     Model: "Модель",
     Messages: "Сообщения",
-    Topic: "Тема",
+    Topic: "Тема разговора",
     Time: "Время",
   },
 };
