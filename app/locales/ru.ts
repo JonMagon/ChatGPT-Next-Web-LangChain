@@ -72,13 +72,6 @@ const ru: PartialLocaleType = {
     },
   },
   Export: {
-    Title: "Все сообщения",
-    Copy: "Копировать все",
-    Download: "Скачать",
-    MessageFromYou: "Сообщение от вас",
-    MessageFromChatGPT: "Сообщение от ChatGPT",
-  },
-  Export: {
     Title: "Экспорт сообщений",
     Copy: "Копировать все",
     Download: "Скачать",
@@ -411,14 +404,6 @@ const ru: PartialLocaleType = {
     NotShow: "Не показывать снова",
     ConfirmNoShow:
       "Подтвердите отключение? Вы можете включить это позже в настройках.",
-  },
-
-  UI: {
-    Confirm: "Подтвердить",
-    Cancel: "Отмена",
-    Close: "Закрыть",
-    Create: "Создать",
-    Edit: "Редактировать",
   },
 
   UI: {
