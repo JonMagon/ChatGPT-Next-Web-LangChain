@@ -67,6 +67,7 @@ const en: LocaleType = {
       Settings: "Settings",
       EnablePlugins: "Enable Plugins",
       DisablePlugins: "Disable Plugins",
+      SelectImage: "Select Image",
     },
     Rename: "Rename Chat",
     Typing: "Typing…",

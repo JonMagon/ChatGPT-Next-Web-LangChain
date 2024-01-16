@@ -594,7 +594,7 @@ export function ChatActions(props: {
         {currentModel == "gpt-4-vision-preview" && (
           <ChatAction
             onClick={selectImage}
-            text="选择图片"
+            text={Locale.Chat.InputActions.SelectImage}
             icon={<UploadIcon />}
             innerNode={
               <input
