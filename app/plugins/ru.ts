@@ -19,7 +19,7 @@ export const RU_PLUGINS: BuiltinPlugin[] = [
       "Класс Calculator - это инструмент, используемый для оценки математических выражений. Он расширяет базовый класс Tool.",
     builtin: true,
     createdAt: 1693744292000,
-    enable: true,
+    enable: false,
     onlyNodeRuntime: false,
   },
   {
@@ -49,7 +49,7 @@ export const RU_PLUGINS: BuiltinPlugin[] = [
     toolName: "dalle_image_generator",
     lang: "ru",
     description:
-      "DALL-E 2 - это система искусственного интеллекта, которая может создавать реалистичные изображения и произведения искусства на основе описания на естественном языке. Для использования этого плагина требуется настройка службы хранения объектов Cloudflare R2.",
+      "DALL-E 3 - это система искусственного интеллекта, которая может создавать реалистичные изображения и произведения искусства на основе описания на естественном языке. Для использования этого плагина требуется настройка службы хранения объектов Cloudflare R2.",
     builtin: true,
     createdAt: 1694703673000,
     enable: false,
@@ -95,7 +95,7 @@ export const RU_PLUGINS: BuiltinPlugin[] = [
       "Пригодится, если вам нужно ответить на вопросы по математике, науке, технике, культуре, обществу и повседневной жизни.",
     builtin: true,
     createdAt: 1703846656000,
-    enable: false,
+    enable: true,
     onlyNodeRuntime: false,
   },
 ];

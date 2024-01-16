@@ -442,7 +442,7 @@ export class ChatGPTApi implements LLMApi {
   }
 
   async usage() {
-    const formatDate = (d: Date) =>
+    /*const formatDate = (d: Date) =>
       `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, "0")}-${d
         .getDate()
         .toString()
@@ -504,6 +504,19 @@ export class ChatGPTApi implements LLMApi {
     return {
       used: response.total_usage,
       total: total.hard_limit_usd,
+    } as LLMUsage;*/
+
+    const res = await fetch("https://chat.jonmagon.dev/balance", {
+        headers: {
+          ...getHeaders(),
+        },
+        method: "GET"
+    });
+    const json = await res.json();
+
+    return {
+      used: 0,
+      total: json.balance,
     } as LLMUsage;
   }
 

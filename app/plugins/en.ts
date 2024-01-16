@@ -19,7 +19,7 @@ export const EN_PLUGINS: BuiltinPlugin[] = [
       "The Calculator class is a tool used to evaluate mathematical expressions. It extends the base Tool class.",
     builtin: true,
     createdAt: 1693744292000,
-    enable: true,
+    enable: false,
     onlyNodeRuntime: false,
   },
   {
@@ -49,7 +49,7 @@ export const EN_PLUGINS: BuiltinPlugin[] = [
     toolName: "dalle_image_generator",
     lang: "en",
     description:
-      "DALL·E 2 is an AI system that can create realistic images and art from a description in natural language. Using this plugin requires configuring Cloudflare R2 object storage service.",
+      "DALL·E 3 is an AI system that can create realistic images and art from a description in natural language. Using this plugin requires configuring Cloudflare R2 object storage service.",
     builtin: true,
     createdAt: 1694703673000,
     enable: false,
@@ -95,7 +95,7 @@ export const EN_PLUGINS: BuiltinPlugin[] = [
       "Useful for when you need to answer questions about Math, Science, Technology, Culture, Society and Everyday Life.",
     builtin: true,
     createdAt: 1703846656000,
-    enable: false,
+    enable: true,
     onlyNodeRuntime: false,
   },
 ];

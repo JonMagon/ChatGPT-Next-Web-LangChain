@@ -18,7 +18,7 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
     description: "计算器是一个用于计算数学表达式的工具。",
     builtin: true,
     createdAt: 1693744292000,
-    enable: true,
+    enable: false,
     onlyNodeRuntime: false,
   },
   {
@@ -92,7 +92,7 @@ export const CN_PLUGINS: BuiltinPlugin[] = [
       "在需要回答有关数学、科学、技术、文化、社会和日常生活的问题时非常有用。",
     builtin: true,
     createdAt: 1703846656000,
-    enable: false,
+    enable: true,
     onlyNodeRuntime: false,
   },
 ];

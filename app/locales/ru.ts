@@ -129,7 +129,7 @@ const ru: PartialLocaleType = {
     Usage: {
       Title: "Баланс аккаунта",
       SubTitle(used: any, total: any) {
-        return `Использовано в этом месяце $${used}, подписка $${total}`;
+        return `Текущий баланс ${total} ₽`;
       },
       IsChecking: "Проверка...",
       Check: "Проверить",
