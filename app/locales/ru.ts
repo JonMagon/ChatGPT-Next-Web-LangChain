@@ -11,7 +11,7 @@ const ru: PartialLocaleType = {
     ChatItemCount: (count: number) => `${count} сообщений`,
   },
   Chat: {
-    SubTitle: (count: number) => `${count} сообщений с ChatGPT`,
+    SubTitle: (count: number) => `${count} сообщений`,
     EditMessage: {
       Title: "Редактирование сообщений",
       Topic: {
@@ -208,7 +208,7 @@ const ru: PartialLocaleType = {
     Usage: {
       Title: "Баланс аккаунта",
       SubTitle(used: any, total: any) {
-        return `Текущий баланс ${total} ₽`;
+        return `Текущий баланс $${total}`;
       },
       IsChecking: "Проверка...",
       Check: "Проверить",
@@ -342,9 +342,9 @@ const ru: PartialLocaleType = {
     Revert: "Вернуть",
   },
   Plugin: {
-    Name: "Плагин",
+    Name: "Плагины",
     Page: {
-      Title: "Плагин",
+      Title: "Плагины",
       SubTitle: (count: number) => `${count} плагинов`,
       Search: "Поиск",
       Create: "Создать",

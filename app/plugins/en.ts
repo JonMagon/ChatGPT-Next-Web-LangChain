@@ -52,7 +52,7 @@ export const EN_PLUGINS: BuiltinPlugin[] = [
       "DALL·E 3 is an AI system that can create realistic images and art from a description in natural language. Using this plugin requires configuring Cloudflare R2 object storage service.",
     builtin: true,
     createdAt: 1694703673000,
-    enable: false,
+    enable: true,
     onlyNodeRuntime: false,
   },
   {

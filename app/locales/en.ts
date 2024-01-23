@@ -269,7 +269,7 @@ const en: LocaleType = {
     Usage: {
       Title: "Account Balance",
       SubTitle(used: any, total: any) {
-        return `Current balance ${total} ₽`;
+        return `Current balance $${total}`;
       },
       IsChecking: "Checking...",
       Check: "Check",
